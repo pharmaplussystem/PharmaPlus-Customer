@@ -1,0 +1,17 @@
+PHARMAPLUS CUSTOMER PORTAL
+
+This is a SEPARATE customer application. It should NOT be placed inside the pharmacy management repository unless you intentionally want a monorepo.
+
+Recommended setup:
+- GitHub repository 1: PharmaPlus management system
+- GitHub repository 2: PharmaPlus Customer Portal
+- Both use the SAME Supabase project
+
+IMPORTANT:
+1. Open config.js.
+2. Enter the SAME Supabase Project URL and browser-safe Publishable/anon key used by the staff system.
+3. Never use a Supabase service_role/secret key in config.js.
+4. Run the online-ordering section of supabase_schema.sql in the SAME Supabase project used by the management system.
+5. Enable GitHub Pages for this customer portal repository.
+
+Customers will use the customer portal URL, while staff continue using the PharmaPlus management URL.
