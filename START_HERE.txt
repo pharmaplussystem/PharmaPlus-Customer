@@ -1,0 +1,10 @@
+PHARMAPLUS CUSTOMER PORTAL - UPGRADED
+
+1. Keep the working Management system and SAME Supabase project.
+2. Run CUSTOMER_PORTAL_UPDATE.sql in that Supabase project once.
+3. Keep the same Supabase URL and Publishable/anon key in config.js.
+4. Upload this folder to its own GitHub repository / GitHub Pages site.
+
+Includes login/create account, working cart, left-side customer features, live order statuses, full order details, rejection reasons, retail/wholesale pricing, optional prescription upload, pickup/home delivery, Google Maps live location, and payment-before-send workflow.
+
+Payment note: the portal collects the customer's payment method and transaction message/reference; it does not independently verify MTN/Airtel/bank/Visa payments. The pharmacy must verify payment before fulfilling the order.
