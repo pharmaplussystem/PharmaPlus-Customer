@@ -1,0 +1,11 @@
+PHARMAPLUS CUSTOMER PORTAL — FINAL BUILD
+
+1. Upload the files in this folder to the Customer Portal hosting/GitHub folder.
+2. Keep your existing config.js values if you already configured Supabase.
+3. In Supabase SQL Editor, run PHARMAPLUS_MASTER_UPDATE.sql ONCE. It upgrades the shared database for both Management and Customer Portal.
+4. Do NOT run the same master update repeatedly unless Supabase reports a specific error.
+5. Hard refresh the Customer Portal once after uploading (Ctrl+Shift+R).
+
+Major changes: customer names on orders, retail/wholesale prices, MTN/Airtel payment account display, live delivery location, server-calculated delivery fee per KM, pickup facility location, updated order statuses, customer confirmation, standard Uganda time, and improved pharmaceutical graphics.
+
+NOTE: Payment references are collected for pharmacy verification; this package does not itself connect to MTN/Airtel/Bank/Visa gateway APIs. Browser notifications can alert while the app is open or in the background. True closed-window push notifications require a web-push backend/VAPID setup.
